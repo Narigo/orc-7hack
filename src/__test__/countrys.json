@@ -2,7 +2,7 @@
   {
     "name": "Afghanistan",
     "code": "AF",
-    "safety": 0.29889725103006226
+    "safety": 0.20889725103006226
   },
   {
     "name": "land Islands",
@@ -12,7 +12,7 @@
   {
     "name": "Albania",
     "code": "AL",
-    "safety": 0.8736546355583139
+    "safety": 0.3736546355583139
   },
   {
     "name": "Algeria",
@@ -32,7 +32,7 @@
   {
     "name": "Angola",
     "code": "AO",
-    "safety": 0.19077454176513609
+    "safety": 0.39077454176513609
   },
   {
     "name": "Anguilla",
@@ -67,7 +67,7 @@
   {
     "name": "Australia",
     "code": "AU",
-    "safety": 0.43005657864752567
+    "safety": 0.63005657864752567
   },
   {
     "name": "Austria",
@@ -77,37 +77,37 @@
   {
     "name": "Azerbaijan",
     "code": "AZ",
-    "safety": 0.9239368943782247
+    "safety": 0.2239368943782247
   },
   {
     "name": "Bahamas",
     "code": "BS",
-    "safety": 0.15156281059144594
+    "safety": 0.75156281059144594
   },
   {
     "name": "Bahrain",
     "code": "BH",
-    "safety": 0.9526107109528232
+    "safety": 0.3526107109528232
   },
   {
     "name": "Bangladesh",
     "code": "BD",
-    "safety": 0.9827085643885596
+    "safety": 0.2827085643885596
   },
   {
     "name": "Barbados",
     "code": "BB",
-    "safety": 0.504794659373095
+    "safety": 0.704794659373095
   },
   {
     "name": "Belarus",
     "code": "BY",
-    "safety": 0.08869796004092789
+    "safety": 0.40869796004092789
   },
   {
     "name": "Belgium",
     "code": "BE",
-    "safety": 0.18453015161516406
+    "safety": 0.88453015161516406
   },
   {
     "name": "Belize",
@@ -127,7 +127,7 @@
   {
     "name": "Bhutan",
     "code": "BT",
-    "safety": 0.939232151545434
+    "safety": 0.239232151545434
   },
   {
     "name": "Bolivia",
@@ -152,7 +152,7 @@
   {
     "name": "Brazil",
     "code": "BR",
-    "safety": 0.03148503942537184
+    "safety": 0.33148503942537184
   },
   {
     "name": "British Indian Ocean Territory",
@@ -172,7 +172,7 @@
   {
     "name": "Burkina Faso",
     "code": "BF",
-    "safety": 0.6683921178580627
+    "safety": 0.3683921178580627
   },
   {
     "name": "Burundi",
@@ -182,22 +182,22 @@
   {
     "name": "Cambodia",
     "code": "KH",
-    "safety": 0.5787130419876987
+    "safety": 0.3787130419876987
   },
   {
     "name": "Cameroon",
     "code": "CM",
-    "safety": 0.45664370131806753
+    "safety": 0.35664370131806753
   },
   {
     "name": "Canada",
     "code": "CA",
-    "safety": 0.9929622262887172
+    "safety": 0.8929622262887172
   },
   {
     "name": "Cape Verde",
     "code": "CV",
-    "safety": 0.2734734133127221
+    "safety": 0.4734734133127221
   },
   {
     "name": "Cayman Islands",
@@ -217,17 +217,17 @@
   {
     "name": "Chile",
     "code": "CL",
-    "safety": 0.8366978605895092
+    "safety": 0.5366978605895092
   },
   {
     "name": "China",
     "code": "CN",
-    "safety": 0.7308344461622309
+    "safety": 0.6308344461622309
   },
   {
     "name": "Christmas Island",
     "code": "CX",
-    "safety": 0.26389627218389955
+    "safety": 0.56389627218389955
   },
   {
     "name": "Cocos (Keeling) Islands",
@@ -242,12 +242,12 @@
   {
     "name": "Comoros",
     "code": "KM",
-    "safety": 0.832294887898926
+    "safety": 0.532294887898926
   },
   {
     "name": "Congo",
     "code": "CG",
-    "safety": 0.7845216445234424
+    "safety": 0.3845216445234424
   },
   {
     "name": "Congo, The Democratic Republic of the",
@@ -277,7 +277,7 @@
   {
     "name": "Cuba",
     "code": "CU",
-    "safety": 0.9765400649690272
+    "safety": 0.5765400649690272
   },
   {
     "name": "Cyprus",
@@ -287,17 +287,17 @@
   {
     "name": "Czech Republic",
     "code": "CZ",
-    "safety": 0.4451520208229578
+    "safety": 0.6451520208229578
   },
   {
     "name": "Denmark",
     "code": "DK",
-    "safety": 0.26492422980173247
+    "safety": 0.76492422980173247
   },
   {
     "name": "Djibouti",
     "code": "DJ",
-    "safety": 0.4894828620332079
+    "safety": 0.3894828620332079
   },
   {
     "name": "Dominica",
@@ -317,7 +317,7 @@
   {
     "name": "Egypt",
     "code": "EG",
-    "safety": 0.742950815708924
+    "safety": 0.342950815708924
   },
   {
     "name": "El Salvador",
@@ -362,12 +362,12 @@
   {
     "name": "Finland",
     "code": "FI",
-    "safety": 0.6736099378109006
+    "safety": 0.9736099378109006
   },
   {
     "name": "France",
     "code": "FR",
-    "safety": 0.6201862150586945
+    "safety": 0.7201862150586945
   },
   {
     "name": "French Guiana",
@@ -402,7 +402,7 @@
   {
     "name": "Germany",
     "code": "DE",
-    "safety": 0.38327450420430864
+    "safety": 0.88327450420430864
   },
   {
     "name": "Ghana",
@@ -422,7 +422,7 @@
   {
     "name": "Greenland",
     "code": "GL",
-    "safety": 0.3531290883496643
+    "safety": 0.6531290883496643
   },
   {
     "name": "Grenada",
@@ -467,7 +467,7 @@
   {
     "name": "Haiti",
     "code": "HT",
-    "safety": 0.2108851244504768
+    "safety": 0.6108851244504768
   },
   {
     "name": "Heard Island and Mcdonald Islands",
@@ -512,22 +512,22 @@
   {
     "name": "Iran, Islamic Republic Of",
     "code": "IR",
-    "safety": 0.9425465880211898
+    "safety": 0.1425465880211898
   },
   {
     "name": "Iraq",
     "code": "IQ",
-    "safety": 0.46500619591168113
+    "safety": 0.16500619591168113
   },
   {
     "name": "Ireland",
     "code": "IE",
-    "safety": 0.12649194516548112
+    "safety": 0.92649194516548112
   },
   {
     "name": "Isle of Man",
     "code": "IM",
-    "safety": 0.329250464746474
+    "safety": 0.929250464746474
   },
   {
     "name": "Israel",
@@ -537,7 +537,7 @@
   {
     "name": "Italy",
     "code": "IT",
-    "safety": 0.5789734246577012
+    "safety": 0.6789734246577012
   },
   {
     "name": "Jamaica",
@@ -552,7 +552,7 @@
   {
     "name": "Jersey",
     "code": "JE",
-    "safety": 0.4622646091290519
+    "safety": 0.5622646091290519
   },
   {
     "name": "Jordan",
@@ -592,7 +592,7 @@
   {
     "name": "Kyrgyzstan",
     "code": "KG",
-    "safety": 0.8883227001011165
+    "safety": 0.2883227001011165
   },
   {
     "name": "Lao People\"S Democratic Republic",
@@ -627,7 +627,7 @@
   {
     "name": "Liechtenstein",
     "code": "LI",
-    "safety": 0.14284711568399633
+    "safety": 0.94284711568399633
   },
   {
     "name": "Lithuania",
@@ -637,7 +637,7 @@
   {
     "name": "Luxembourg",
     "code": "LU",
-    "safety": 0.7348618754796541
+    "safety": 0.8348618754796541
   },
   {
     "name": "Macao",
@@ -772,7 +772,7 @@
   {
     "name": "Netherlands",
     "code": "NL",
-    "safety": 0.09808049584168965
+    "safety": 0.89808049584168965
   },
   {
     "name": "Netherlands Antilles",
@@ -797,7 +797,7 @@
   {
     "name": "Niger",
     "code": "NE",
-    "safety": 0.818892901720657
+    "safety": 0.118892901720657
   },
   {
     "name": "Nigeria",
@@ -817,12 +817,12 @@
   {
     "name": "Northern Mariana Islands",
     "code": "MP",
-    "safety": 0.908599705019195
+    "safety": 0.508599705019195
   },
   {
     "name": "Norway",
     "code": "NO",
-    "safety": 0.6803791187626116
+    "safety": 0.8803791187626116
   },
   {
     "name": "Oman",
@@ -1017,7 +1017,7 @@
   {
     "name": "Spain",
     "code": "ES",
-    "safety": 0.3073341721931926
+    "safety": 0.7073341721931926
   },
   {
     "name": "Sri Lanka",
@@ -1047,17 +1047,17 @@
   {
     "name": "Sweden",
     "code": "SE",
-    "safety": 0.3154393198236156
+    "safety": 0.9154393198236156
   },
   {
     "name": "Switzerland",
     "code": "CH",
-    "safety": 0.5263957587573478
+    "safety": 0.9263957587573478
   },
   {
     "name": "Syrian Arab Republic",
     "code": "SY",
-    "safety": 0.9538938079249906
+    "safety": 0.0538938079249906
   },
   {
     "name": "Taiwan, Province of China",
@@ -1112,7 +1112,7 @@
   {
     "name": "Turkey",
     "code": "TR",
-    "safety": 0.7341723491840895
+    "safety": 0.0341723491840895
   },
   {
     "name": "Turkmenistan",
@@ -1207,7 +1207,7 @@
   {
     "name": "Yemen",
     "code": "YE",
-    "safety": 0.500647856235815
+    "safety": 0.300647856235815
   },
   {
     "name": "Zambia",

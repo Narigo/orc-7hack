@@ -10,6 +10,7 @@ const _ = require("lodash");
 export default class WegDeComponent extends Component {
   webDeResponse;
   properties;
+
   constructor(props) {
     super(props);
 
@@ -43,3 +44,33 @@ export default class WegDeComponent extends Component {
 //   exactDate: "false",
 //   limit: 10
 // }).then(response => console.log(response));
+
+const calculateStars = (pricing) => {
+  return Math.ceil(pricing * 6);
+};
+
+const calculatePrice = (pricing) => {
+  return Math.ceil(pricing * 1000);
+};
+
+const calculateMeat = (pricing) => {
+  return Math.ceil(pricing * 5);
+};
+
+const filterCountries = (countries, threshold) => {
+  return _.filter(countries, country => country.safety > threshold);
+}
+
+const properties = (comfort, countries, channel) => {
+  return {
+    channel: channel,
+    mealType: calculateMeat(comfort),
+    price: calculatePrice(comfort),
+    departureAirport: "MUC",
+    stars: calculateStars(comfort),
+    countries: filterCountries(countries),
+    limit: 50
+  };
+};
+
+<WegDeComponent properties={properties} />
