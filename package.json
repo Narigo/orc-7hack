@@ -1,0 +1,11 @@
+{
+  "name": "orc-7hack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Narigo/orc-7hack.git",
+  "author": "Joern Bernhardt <jb@campudus.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
