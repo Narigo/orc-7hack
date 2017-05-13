@@ -24,7 +24,7 @@ export const ask = (apiParams) => {
       ...apiParams,
       filters: apiParams.filters.map(filter => {
         const updateFn = question.filters[filter.id];
-        const rating = answer[filter.id] === (void 0) ? filter.rating : updateFn(filter.rating, answer[filter.id]);
+        const rating = updateFn === (void 0) ? filter.rating : updateFn(filter.rating, answer);
         return {
           ...filter,
           rating

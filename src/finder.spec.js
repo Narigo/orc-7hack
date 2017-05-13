@@ -37,12 +37,10 @@ describe("ask", () => {
     const apiParams = apiParamsMultipleFilters;
     const question = {
       filters: {
-        safety: (currentRating, answerValue) => answerValue
+        safety: (rating, answer) => answer
       }
     };
-    const answer = {
-      safety: 1
-    };
+    const answer = 1;
     return ask(apiParams)({
       question,
       answer
@@ -60,9 +58,7 @@ describe("ask", () => {
         activities: (currentRating, answerValue) => answerValue
       }
     };
-    const answer = {
-      activities: 0
-    };
+    const answer = 0;
     return ask(apiParams)({
       question,
       answer
@@ -80,9 +76,7 @@ describe("ask", () => {
         activities: (currentRating, answerValue) => currentRating * answerValue
       }
     };
-    const answer = {
-      activities: 0.5
-    };
+    const answer = 0.5;
     return ask(apiParams)({
       question,
       answer
@@ -90,6 +84,30 @@ describe("ask", () => {
       .then(resultApiParams => {
         const activitiesFilter = resultApiParams.filters.find(filter => filter.id === "activities");
         expect(activitiesFilter.rating).to.eql(0.25);
+      });
+  });
+
+  it("can manipulate multiple ratings with a single question / answer", () => {
+    const apiParams = apiParamsMultipleFilters;
+    const question = {
+      filters: {
+        safety: (rating, answer) => (rating + answer) / 2,
+        activities: (rating, answer) => {
+          const diff = answer - rating;
+          return rating + (0.5 * diff / 2);
+        }
+      }
+    };
+    const answer = 1;
+    return ask(apiParams)({
+      question,
+      answer
+    })
+      .then(resultApiParams => {
+        const safetyFilter = resultApiParams.filters.find(filter => filter.id === "safety");
+        expect(safetyFilter.rating).to.eql(0.75);
+        const activitiesFilter = resultApiParams.filters.find(filter => filter.id === "activities");
+        expect(activitiesFilter.rating).to.eql(0.625);
       });
   });
 
