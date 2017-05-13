@@ -9,12 +9,18 @@ const _ = require("lodash");
 @handleRequest
 export default class WegDeComponent extends Component {
   webDeResponse;
+  properties;
+  constructor(props) {
+    super(props);
+
+    const {properties} = props;
+    this.properties = properties;
+  }
 
   componentDidMount() {
-    const {handleRequest, properties} = this.props;
     const baseUri = "http://7hack.comvel.net/weg.de/v1/products?";
     const apikey = "apikey=7Hack%212017";
-    const fullUri = baseUri + apikey + this.createParametersForUri(properties);
+    const fullUri = baseUri + apikey + this.createParametersForUri(this.properties);
     handleRequest(fullUri);
   }
 
@@ -26,8 +32,10 @@ export default class WegDeComponent extends Component {
   };
 
   render() {
-  };
-};
+  }
+  ;
+}
+;
 //
 // const wegDeComponent = new WegDeComponent();
 // wegDeComponent.doWegDeRequest({

@@ -1,8 +1,7 @@
 import React from "react";
 import superagent from "superagent";
 import _ from "lodash";
-import {formatUrl} from "../../helpers/ApiClient.js";
-import withAbortableXhrRequests from "../HelperComponents/withAbortableXhrRequests";
+import withAbortableXhrRequests from "../helperComponents/abortHelper";
 
 const handleRequests = (Component) => {
 
@@ -79,7 +78,7 @@ const handleRequests = (Component) => {
       this.setLoadingState();
 
       const request = superagent
-        .get(formatUrl(url))
+        .get(url)
         .end((err, {body = []}) => {
           if (err) {
             this.setErrorState(err, cb);
