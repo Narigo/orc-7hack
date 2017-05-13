@@ -2,12 +2,30 @@ import React from "react";
 import {RangeSlider} from "../components/index";
 import {weighted} from "../../../weighted";
 
+const FILTERS = {
+  countries: [],
+
+};
+
 export const filters = [
   {
-    id: "safety"
+    id: "safety",
+    map: (value, filters) => {
+      return {
+        ...filters,
+        countries: filters.countries.filter(country => {
+          return (value > 0.8 && country !== "DE");
+        })
+      };
+    }
   },
   {
-    id: "activities"
+    id: "activities",
+    map: (value) => {
+      return {
+        ...filters
+      }
+    }
   }
 ];
 
