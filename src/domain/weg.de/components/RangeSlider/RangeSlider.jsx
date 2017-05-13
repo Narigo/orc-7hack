@@ -14,7 +14,7 @@ export default class RangeSlider extends Component {
   _onChange = (value) => this.setState({value});
 
   render() {
-    const {maxValue, minValue, step} = this.props;
+    const {maxValue, minValue, step, onChangeCompleteFN} = this.props;
 
     return <InputRange
       className="range-slider"
@@ -23,6 +23,7 @@ export default class RangeSlider extends Component {
       step={step}
       value={this.state.value}
       onChange={this._onChange}
+      onChangeComplete={onChangeCompleteFN}
     />
   }
 }
