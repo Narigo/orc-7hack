@@ -1,0 +1,1222 @@
+[
+  {
+    "name": "Afghanistan",
+    "code": "AF",
+    "safety": 0.29889725103006226
+  },
+  {
+    "name": "land Islands",
+    "code": "AX",
+    "safety": 0.38450772529974064
+  },
+  {
+    "name": "Albania",
+    "code": "AL",
+    "safety": 0.8736546355583139
+  },
+  {
+    "name": "Algeria",
+    "code": "DZ",
+    "safety": 0.2837043916953066
+  },
+  {
+    "name": "American Samoa",
+    "code": "AS",
+    "safety": 0.6534409809720743
+  },
+  {
+    "name": "AndorrA",
+    "code": "AD",
+    "safety": 0.9328911813274792
+  },
+  {
+    "name": "Angola",
+    "code": "AO",
+    "safety": 0.19077454176513609
+  },
+  {
+    "name": "Anguilla",
+    "code": "AI",
+    "safety": 0.2531371145370016
+  },
+  {
+    "name": "Antarctica",
+    "code": "AQ",
+    "safety": 0.6439517639261787
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "code": "AG",
+    "safety": 0.3854284553828331
+  },
+  {
+    "name": "Argentina",
+    "code": "AR",
+    "safety": 0.24610382553616073
+  },
+  {
+    "name": "Armenia",
+    "code": "AM",
+    "safety": 0.6865969721473764
+  },
+  {
+    "name": "Aruba",
+    "code": "AW",
+    "safety": 0.047686759414485635
+  },
+  {
+    "name": "Australia",
+    "code": "AU",
+    "safety": 0.43005657864752567
+  },
+  {
+    "name": "Austria",
+    "code": "AT",
+    "safety": 0.7559719532308831
+  },
+  {
+    "name": "Azerbaijan",
+    "code": "AZ",
+    "safety": 0.9239368943782247
+  },
+  {
+    "name": "Bahamas",
+    "code": "BS",
+    "safety": 0.15156281059144594
+  },
+  {
+    "name": "Bahrain",
+    "code": "BH",
+    "safety": 0.9526107109528232
+  },
+  {
+    "name": "Bangladesh",
+    "code": "BD",
+    "safety": 0.9827085643885596
+  },
+  {
+    "name": "Barbados",
+    "code": "BB",
+    "safety": 0.504794659373095
+  },
+  {
+    "name": "Belarus",
+    "code": "BY",
+    "safety": 0.08869796004092789
+  },
+  {
+    "name": "Belgium",
+    "code": "BE",
+    "safety": 0.18453015161516406
+  },
+  {
+    "name": "Belize",
+    "code": "BZ",
+    "safety": 0.53716282991527
+  },
+  {
+    "name": "Benin",
+    "code": "BJ",
+    "safety": 0.1876303911683206
+  },
+  {
+    "name": "Bermuda",
+    "code": "BM",
+    "safety": 0.5365505338225987
+  },
+  {
+    "name": "Bhutan",
+    "code": "BT",
+    "safety": 0.939232151545434
+  },
+  {
+    "name": "Bolivia",
+    "code": "BO",
+    "safety": 0.15742996261018005
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "code": "BA",
+    "safety": 0.025194621769188963
+  },
+  {
+    "name": "Botswana",
+    "code": "BW",
+    "safety": 0.4604864537034554
+  },
+  {
+    "name": "Bouvet Island",
+    "code": "BV",
+    "safety": 0.698631722778793
+  },
+  {
+    "name": "Brazil",
+    "code": "BR",
+    "safety": 0.03148503942537184
+  },
+  {
+    "name": "British Indian Ocean Territory",
+    "code": "IO",
+    "safety": 0.44447361002034924
+  },
+  {
+    "name": "Brunei Darussalam",
+    "code": "BN",
+    "safety": 0.47188699786623434
+  },
+  {
+    "name": "Bulgaria",
+    "code": "BG",
+    "safety": 0.6257773720964501
+  },
+  {
+    "name": "Burkina Faso",
+    "code": "BF",
+    "safety": 0.6683921178580627
+  },
+  {
+    "name": "Burundi",
+    "code": "BI",
+    "safety": 0.09828043756838212
+  },
+  {
+    "name": "Cambodia",
+    "code": "KH",
+    "safety": 0.5787130419876987
+  },
+  {
+    "name": "Cameroon",
+    "code": "CM",
+    "safety": 0.45664370131806753
+  },
+  {
+    "name": "Canada",
+    "code": "CA",
+    "safety": 0.9929622262887172
+  },
+  {
+    "name": "Cape Verde",
+    "code": "CV",
+    "safety": 0.2734734133127221
+  },
+  {
+    "name": "Cayman Islands",
+    "code": "KY",
+    "safety": 0.4422024861612046
+  },
+  {
+    "name": "Central African Republic",
+    "code": "CF",
+    "safety": 0.39809438036229206
+  },
+  {
+    "name": "Chad",
+    "code": "TD",
+    "safety": 0.5221877657777818
+  },
+  {
+    "name": "Chile",
+    "code": "CL",
+    "safety": 0.8366978605895092
+  },
+  {
+    "name": "China",
+    "code": "CN",
+    "safety": 0.7308344461622309
+  },
+  {
+    "name": "Christmas Island",
+    "code": "CX",
+    "safety": 0.26389627218389955
+  },
+  {
+    "name": "Cocos (Keeling) Islands",
+    "code": "CC",
+    "safety": 0.329867925142286
+  },
+  {
+    "name": "Colombia",
+    "code": "CO",
+    "safety": 0.6033598748185873
+  },
+  {
+    "name": "Comoros",
+    "code": "KM",
+    "safety": 0.832294887898926
+  },
+  {
+    "name": "Congo",
+    "code": "CG",
+    "safety": 0.7845216445234424
+  },
+  {
+    "name": "Congo, The Democratic Republic of the",
+    "code": "CD",
+    "safety": 0.3217027634003986
+  },
+  {
+    "name": "Cook Islands",
+    "code": "CK",
+    "safety": 0.34828864835001094
+  },
+  {
+    "name": "Costa Rica",
+    "code": "CR",
+    "safety": 0.13397492482377538
+  },
+  {
+    "name": "Cote D\"Ivoire",
+    "code": "CI",
+    "safety": 0.4911065443911411
+  },
+  {
+    "name": "Croatia",
+    "code": "HR",
+    "safety": 0.6501615895463075
+  },
+  {
+    "name": "Cuba",
+    "code": "CU",
+    "safety": 0.9765400649690272
+  },
+  {
+    "name": "Cyprus",
+    "code": "CY",
+    "safety": 0.6945415290691876
+  },
+  {
+    "name": "Czech Republic",
+    "code": "CZ",
+    "safety": 0.4451520208229578
+  },
+  {
+    "name": "Denmark",
+    "code": "DK",
+    "safety": 0.26492422980173247
+  },
+  {
+    "name": "Djibouti",
+    "code": "DJ",
+    "safety": 0.4894828620332079
+  },
+  {
+    "name": "Dominica",
+    "code": "DM",
+    "safety": 0.44302555685921075
+  },
+  {
+    "name": "Dominican Republic",
+    "code": "DO",
+    "safety": 0.6971001919824609
+  },
+  {
+    "name": "Ecuador",
+    "code": "EC",
+    "safety": 0.4817796064355371
+  },
+  {
+    "name": "Egypt",
+    "code": "EG",
+    "safety": 0.742950815708924
+  },
+  {
+    "name": "El Salvador",
+    "code": "SV",
+    "safety": 0.5459493643492308
+  },
+  {
+    "name": "Equatorial Guinea",
+    "code": "GQ",
+    "safety": 0.9419210991807292
+  },
+  {
+    "name": "Eritrea",
+    "code": "ER",
+    "safety": 0.048658322670774856
+  },
+  {
+    "name": "Estonia",
+    "code": "EE",
+    "safety": 0.5614071455108611
+  },
+  {
+    "name": "Ethiopia",
+    "code": "ET",
+    "safety": 0.12690252493671528
+  },
+  {
+    "name": "Falkland Islands (Malvinas)",
+    "code": "FK",
+    "safety": 0.9223003853246654
+  },
+  {
+    "name": "Faroe Islands",
+    "code": "FO",
+    "safety": 0.8836945988003098
+  },
+  {
+    "name": "Fiji",
+    "code": "FJ",
+    "safety": 0.7613940510405091
+  },
+  {
+    "name": "Finland",
+    "code": "FI",
+    "safety": 0.6736099378109006
+  },
+  {
+    "name": "France",
+    "code": "FR",
+    "safety": 0.6201862150586945
+  },
+  {
+    "name": "French Guiana",
+    "code": "GF",
+    "safety": 0.31357903833044976
+  },
+  {
+    "name": "French Polynesia",
+    "code": "PF",
+    "safety": 0.31412476891483165
+  },
+  {
+    "name": "French Southern Territories",
+    "code": "TF",
+    "safety": 0.08126891615646459
+  },
+  {
+    "name": "Gabon",
+    "code": "GA",
+    "safety": 0.9428137475387901
+  },
+  {
+    "name": "Gambia",
+    "code": "GM",
+    "safety": 0.21346524598977767
+  },
+  {
+    "name": "Georgia",
+    "code": "GE",
+    "safety": 0.9136549967347822
+  },
+  {
+    "name": "Germany",
+    "code": "DE",
+    "safety": 0.38327450420430864
+  },
+  {
+    "name": "Ghana",
+    "code": "GH",
+    "safety": 0.8283684718081634
+  },
+  {
+    "name": "Gibraltar",
+    "code": "GI",
+    "safety": 0.8916311932436289
+  },
+  {
+    "name": "Greece",
+    "code": "GR",
+    "safety": 0.7394437118501689
+  },
+  {
+    "name": "Greenland",
+    "code": "GL",
+    "safety": 0.3531290883496643
+  },
+  {
+    "name": "Grenada",
+    "code": "GD",
+    "safety": 0.18164596637050234
+  },
+  {
+    "name": "Guadeloupe",
+    "code": "GP",
+    "safety": 0.1662801774328233
+  },
+  {
+    "name": "Guam",
+    "code": "GU",
+    "safety": 0.33116343124869196
+  },
+  {
+    "name": "Guatemala",
+    "code": "GT",
+    "safety": 0.12346362287232826
+  },
+  {
+    "name": "Guernsey",
+    "code": "GG",
+    "safety": 0.7141102347393755
+  },
+  {
+    "name": "Guinea",
+    "code": "GN",
+    "safety": 0.535867524290961
+  },
+  {
+    "name": "Guinea-Bissau",
+    "code": "GW",
+    "safety": 0.10332579463973235
+  },
+  {
+    "name": "Guyana",
+    "code": "GY",
+    "safety": 0.9936837305954205
+  },
+  {
+    "name": "Haiti",
+    "code": "HT",
+    "safety": 0.2108851244504768
+  },
+  {
+    "name": "Heard Island and Mcdonald Islands",
+    "code": "HM",
+    "safety": 0.3995931372168584
+  },
+  {
+    "name": "Holy See (Vatican City State)",
+    "code": "VA",
+    "safety": 0.9268387664993778
+  },
+  {
+    "name": "Honduras",
+    "code": "HN",
+    "safety": 0.49494431351434987
+  },
+  {
+    "name": "Hong Kong",
+    "code": "HK",
+    "safety": 0.52961134244464
+  },
+  {
+    "name": "Hungary",
+    "code": "HU",
+    "safety": 0.8115231073156517
+  },
+  {
+    "name": "Iceland",
+    "code": "IS",
+    "safety": 0.4506847962402305
+  },
+  {
+    "name": "India",
+    "code": "IN",
+    "safety": 0.3254864444348331
+  },
+  {
+    "name": "Indonesia",
+    "code": "ID",
+    "safety": 0.6696472573710746
+  },
+  {
+    "name": "Iran, Islamic Republic Of",
+    "code": "IR",
+    "safety": 0.9425465880211898
+  },
+  {
+    "name": "Iraq",
+    "code": "IQ",
+    "safety": 0.46500619591168113
+  },
+  {
+    "name": "Ireland",
+    "code": "IE",
+    "safety": 0.12649194516548112
+  },
+  {
+    "name": "Isle of Man",
+    "code": "IM",
+    "safety": 0.329250464746474
+  },
+  {
+    "name": "Israel",
+    "code": "IL",
+    "safety": 0.01975328189597514
+  },
+  {
+    "name": "Italy",
+    "code": "IT",
+    "safety": 0.5789734246577012
+  },
+  {
+    "name": "Jamaica",
+    "code": "JM",
+    "safety": 0.8630392198164372
+  },
+  {
+    "name": "Japan",
+    "code": "JP",
+    "safety": 0.9686941729810765
+  },
+  {
+    "name": "Jersey",
+    "code": "JE",
+    "safety": 0.4622646091290519
+  },
+  {
+    "name": "Jordan",
+    "code": "JO",
+    "safety": 0.40006114928553926
+  },
+  {
+    "name": "Kazakhstan",
+    "code": "KZ",
+    "safety": 0.5649923882982573
+  },
+  {
+    "name": "Kenya",
+    "code": "KE",
+    "safety": 0.3267589725492659
+  },
+  {
+    "name": "Kiribati",
+    "code": "KI",
+    "safety": 0.9208416887040738
+  },
+  {
+    "name": "Korea, Democratic People\"S Republic of",
+    "code": "KP",
+    "safety": 0.7728243098449734
+  },
+  {
+    "name": "Korea, Republic of",
+    "code": "KR",
+    "safety": 0.8742251430261678
+  },
+  {
+    "name": "Kuwait",
+    "code": "KW",
+    "safety": 0.17820455702722482
+  },
+  {
+    "name": "Kyrgyzstan",
+    "code": "KG",
+    "safety": 0.8883227001011165
+  },
+  {
+    "name": "Lao People\"S Democratic Republic",
+    "code": "LA",
+    "safety": 0.5071450533614914
+  },
+  {
+    "name": "Latvia",
+    "code": "LV",
+    "safety": 0.6642686221950305
+  },
+  {
+    "name": "Lebanon",
+    "code": "LB",
+    "safety": 0.007874147375467988
+  },
+  {
+    "name": "Lesotho",
+    "code": "LS",
+    "safety": 0.2410786195360306
+  },
+  {
+    "name": "Liberia",
+    "code": "LR",
+    "safety": 0.4343593460973947
+  },
+  {
+    "name": "Libyan Arab Jamahiriya",
+    "code": "LY",
+    "safety": 0.623892060359704
+  },
+  {
+    "name": "Liechtenstein",
+    "code": "LI",
+    "safety": 0.14284711568399633
+  },
+  {
+    "name": "Lithuania",
+    "code": "LT",
+    "safety": 0.9062224133432923
+  },
+  {
+    "name": "Luxembourg",
+    "code": "LU",
+    "safety": 0.7348618754796541
+  },
+  {
+    "name": "Macao",
+    "code": "MO",
+    "safety": 0.35924583111589414
+  },
+  {
+    "name": "Macedonia, The Former Yugoslav Republic of",
+    "code": "MK",
+    "safety": 0.15582498241852094
+  },
+  {
+    "name": "Madagascar",
+    "code": "MG",
+    "safety": 0.5896662246536548
+  },
+  {
+    "name": "Malawi",
+    "code": "MW",
+    "safety": 0.8333697982758783
+  },
+  {
+    "name": "Malaysia",
+    "code": "MY",
+    "safety": 0.6733402699114974
+  },
+  {
+    "name": "Maldives",
+    "code": "MV",
+    "safety": 0.21555347749663922
+  },
+  {
+    "name": "Mali",
+    "code": "ML",
+    "safety": 0.629386587325512
+  },
+  {
+    "name": "Malta",
+    "code": "MT",
+    "safety": 0.41194748941575243
+  },
+  {
+    "name": "Marshall Islands",
+    "code": "MH",
+    "safety": 0.7440619394533197
+  },
+  {
+    "name": "Martinique",
+    "code": "MQ",
+    "safety": 0.8266326810668627
+  },
+  {
+    "name": "Mauritania",
+    "code": "MR",
+    "safety": 0.9470834647805633
+  },
+  {
+    "name": "Mauritius",
+    "code": "MU",
+    "safety": 0.8148116101760121
+  },
+  {
+    "name": "Mayotte",
+    "code": "YT",
+    "safety": 0.19863829371516206
+  },
+  {
+    "name": "Mexico",
+    "code": "MX",
+    "safety": 0.31561111576765466
+  },
+  {
+    "name": "Micronesia, Federated States of",
+    "code": "FM",
+    "safety": 0.8184226412306255
+  },
+  {
+    "name": "Moldova, Republic of",
+    "code": "MD",
+    "safety": 0.9721661189359743
+  },
+  {
+    "name": "Monaco",
+    "code": "MC",
+    "safety": 0.40432116376626603
+  },
+  {
+    "name": "Mongolia",
+    "code": "MN",
+    "safety": 0.7935012438584734
+  },
+  {
+    "name": "Montenegro",
+    "code": "ME",
+    "safety": 0.011866073915191677
+  },
+  {
+    "name": "Montserrat",
+    "code": "MS",
+    "safety": 0.9928347136123938
+  },
+  {
+    "name": "Morocco",
+    "code": "MA",
+    "safety": 0.02243745461113056
+  },
+  {
+    "name": "Mozambique",
+    "code": "MZ",
+    "safety": 0.2541273550706613
+  },
+  {
+    "name": "Myanmar",
+    "code": "MM",
+    "safety": 0.31406532915141305
+  },
+  {
+    "name": "Namibia",
+    "code": "NA",
+    "safety": 0.5665312429307996
+  },
+  {
+    "name": "Nauru",
+    "code": "NR",
+    "safety": 0.24447643749533077
+  },
+  {
+    "name": "Nepal",
+    "code": "NP",
+    "safety": 0.2782553918484725
+  },
+  {
+    "name": "Netherlands",
+    "code": "NL",
+    "safety": 0.09808049584168965
+  },
+  {
+    "name": "Netherlands Antilles",
+    "code": "AN",
+    "safety": 0.19120328315074353
+  },
+  {
+    "name": "New Caledonia",
+    "code": "NC",
+    "safety": 0.356833021883048
+  },
+  {
+    "name": "New Zealand",
+    "code": "NZ",
+    "safety": 0.9758525397717679
+  },
+  {
+    "name": "Nicaragua",
+    "code": "NI",
+    "safety": 0.6078613968927691
+  },
+  {
+    "name": "Niger",
+    "code": "NE",
+    "safety": 0.818892901720657
+  },
+  {
+    "name": "Nigeria",
+    "code": "NG",
+    "safety": 0.5227496681903909
+  },
+  {
+    "name": "Niue",
+    "code": "NU",
+    "safety": 0.7978886237828522
+  },
+  {
+    "name": "Norfolk Island",
+    "code": "NF",
+    "safety": 0.45651938503076184
+  },
+  {
+    "name": "Northern Mariana Islands",
+    "code": "MP",
+    "safety": 0.908599705019195
+  },
+  {
+    "name": "Norway",
+    "code": "NO",
+    "safety": 0.6803791187626116
+  },
+  {
+    "name": "Oman",
+    "code": "OM",
+    "safety": 0.7355853261760266
+  },
+  {
+    "name": "Pakistan",
+    "code": "PK",
+    "safety": 0.016577972404559382
+  },
+  {
+    "name": "Palau",
+    "code": "PW",
+    "safety": 0.5055196042012884
+  },
+  {
+    "name": "Palestinian Territory, Occupied",
+    "code": "PS",
+    "safety": 0.05190938159037706
+  },
+  {
+    "name": "Panama",
+    "code": "PA",
+    "safety": 0.3111394948424351
+  },
+  {
+    "name": "Papua New Guinea",
+    "code": "PG",
+    "safety": 0.5281123205941851
+  },
+  {
+    "name": "Paraguay",
+    "code": "PY",
+    "safety": 0.2797714399233284
+  },
+  {
+    "name": "Peru",
+    "code": "PE",
+    "safety": 0.5853312836010687
+  },
+  {
+    "name": "Philippines",
+    "code": "PH",
+    "safety": 0.5588241517032537
+  },
+  {
+    "name": "Pitcairn",
+    "code": "PN",
+    "safety": 0.4460517806616773
+  },
+  {
+    "name": "Poland",
+    "code": "PL",
+    "safety": 0.09147307997570908
+  },
+  {
+    "name": "Portugal",
+    "code": "PT",
+    "safety": 0.06849307476511468
+  },
+  {
+    "name": "Puerto Rico",
+    "code": "PR",
+    "safety": 0.7139268811913924
+  },
+  {
+    "name": "Qatar",
+    "code": "QA",
+    "safety": 0.23693380805373754
+  },
+  {
+    "name": "Reunion",
+    "code": "RE",
+    "safety": 0.29834803425568013
+  },
+  {
+    "name": "Romania",
+    "code": "RO",
+    "safety": 0.8279120601108956
+  },
+  {
+    "name": "Russian Federation",
+    "code": "RU",
+    "safety": 0.11694727558915208
+  },
+  {
+    "name": "RWANDA",
+    "code": "RW",
+    "safety": 0.40207041856475345
+  },
+  {
+    "name": "Saint Helena",
+    "code": "SH",
+    "safety": 0.49612295403424667
+  },
+  {
+    "name": "Saint Kitts and Nevis",
+    "code": "KN",
+    "safety": 0.40914388619860453
+  },
+  {
+    "name": "Saint Lucia",
+    "code": "LC",
+    "safety": 0.6289986628371926
+  },
+  {
+    "name": "Saint Pierre and Miquelon",
+    "code": "PM",
+    "safety": 0.46728853322555497
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "code": "VC",
+    "safety": 0.6372094463130691
+  },
+  {
+    "name": "Samoa",
+    "code": "WS",
+    "safety": 0.5580352957056669
+  },
+  {
+    "name": "San Marino",
+    "code": "SM",
+    "safety": 0.48742643564719845
+  },
+  {
+    "name": "Sao Tome and Principe",
+    "code": "ST",
+    "safety": 0.3437191944360345
+  },
+  {
+    "name": "Saudi Arabia",
+    "code": "SA",
+    "safety": 0.9245138280248046
+  },
+  {
+    "name": "Senegal",
+    "code": "SN",
+    "safety": 0.822290271546416
+  },
+  {
+    "name": "Serbia",
+    "code": "RS",
+    "safety": 0.483961431575914
+  },
+  {
+    "name": "Seychelles",
+    "code": "SC",
+    "safety": 0.9675591817056486
+  },
+  {
+    "name": "Sierra Leone",
+    "code": "SL",
+    "safety": 0.06625262994665948
+  },
+  {
+    "name": "Singapore",
+    "code": "SG",
+    "safety": 0.4907344995027021
+  },
+  {
+    "name": "Slovakia",
+    "code": "SK",
+    "safety": 0.3887467409617049
+  },
+  {
+    "name": "Slovenia",
+    "code": "SI",
+    "safety": 0.6089996353187017
+  },
+  {
+    "name": "Solomon Islands",
+    "code": "SB",
+    "safety": 0.7187924979803488
+  },
+  {
+    "name": "Somalia",
+    "code": "SO",
+    "safety": 0.8907922242608488
+  },
+  {
+    "name": "South Africa",
+    "code": "ZA",
+    "safety": 0.6083865533186206
+  },
+  {
+    "name": "South Georgia and the South Sandwich Islands",
+    "code": "GS",
+    "safety": 0.7848078986325853
+  },
+  {
+    "name": "Spain",
+    "code": "ES",
+    "safety": 0.3073341721931926
+  },
+  {
+    "name": "Sri Lanka",
+    "code": "LK",
+    "safety": 0.05771189809572097
+  },
+  {
+    "name": "Sudan",
+    "code": "SD",
+    "safety": 0.5573398262012044
+  },
+  {
+    "name": "Suriname",
+    "code": "SR",
+    "safety": 0.5450069966955051
+  },
+  {
+    "name": "Svalbard and Jan Mayen",
+    "code": "SJ",
+    "safety": 0.40432594239684905
+  },
+  {
+    "name": "Swaziland",
+    "code": "SZ",
+    "safety": 0.5262273304855083
+  },
+  {
+    "name": "Sweden",
+    "code": "SE",
+    "safety": 0.3154393198236156
+  },
+  {
+    "name": "Switzerland",
+    "code": "CH",
+    "safety": 0.5263957587573478
+  },
+  {
+    "name": "Syrian Arab Republic",
+    "code": "SY",
+    "safety": 0.9538938079249906
+  },
+  {
+    "name": "Taiwan, Province of China",
+    "code": "TW",
+    "safety": 0.8291511950797885
+  },
+  {
+    "name": "Tajikistan",
+    "code": "TJ",
+    "safety": 0.4657906910380154
+  },
+  {
+    "name": "Tanzania, United Republic of",
+    "code": "TZ",
+    "safety": 0.16169756455016016
+  },
+  {
+    "name": "Thailand",
+    "code": "TH",
+    "safety": 0.07772521774676422
+  },
+  {
+    "name": "Timor-Leste",
+    "code": "TL",
+    "safety": 0.4647036278537655
+  },
+  {
+    "name": "Togo",
+    "code": "TG",
+    "safety": 0.4200830489063365
+  },
+  {
+    "name": "Tokelau",
+    "code": "TK",
+    "safety": 0.3973060153121366
+  },
+  {
+    "name": "Tonga",
+    "code": "TO",
+    "safety": 0.742690877746184
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "code": "TT",
+    "safety": 0.6206091909486602
+  },
+  {
+    "name": "Tunisia",
+    "code": "TN",
+    "safety": 0.31885880938540456
+  },
+  {
+    "name": "Turkey",
+    "code": "TR",
+    "safety": 0.7341723491840895
+  },
+  {
+    "name": "Turkmenistan",
+    "code": "TM",
+    "safety": 0.48964457931984806
+  },
+  {
+    "name": "Turks and Caicos Islands",
+    "code": "TC",
+    "safety": 0.2553464760263031
+  },
+  {
+    "name": "Tuvalu",
+    "code": "TV",
+    "safety": 0.6417334771913905
+  },
+  {
+    "name": "Uganda",
+    "code": "UG",
+    "safety": 0.17999779251276427
+  },
+  {
+    "name": "Ukraine",
+    "code": "UA",
+    "safety": 0.3089278611405435
+  },
+  {
+    "name": "United Arab Emirates",
+    "code": "AE",
+    "safety": 0.4981264930737288
+  },
+  {
+    "name": "United Kingdom",
+    "code": "GB",
+    "safety": 0.5650349438714102
+  },
+  {
+    "name": "United States",
+    "code": "US",
+    "safety": 0.739324591498695
+  },
+  {
+    "name": "United States Minor Outlying Islands",
+    "code": "UM",
+    "safety": 0.22173868911852979
+  },
+  {
+    "name": "Uruguay",
+    "code": "UY",
+    "safety": 0.3819353766648015
+  },
+  {
+    "name": "Uzbekistan",
+    "code": "UZ",
+    "safety": 0.7748403115038294
+  },
+  {
+    "name": "Vanuatu",
+    "code": "VU",
+    "safety": 0.6179633394386874
+  },
+  {
+    "name": "Venezuela",
+    "code": "VE",
+    "safety": 0.7488400754873523
+  },
+  {
+    "name": "Viet Nam",
+    "code": "VN",
+    "safety": 0.7539694752903277
+  },
+  {
+    "name": "Virgin Islands, British",
+    "code": "VG",
+    "safety": 0.24947705576805213
+  },
+  {
+    "name": "Virgin Islands, U.S.",
+    "code": "VI",
+    "safety": 0.2843466661246541
+  },
+  {
+    "name": "Wallis and Futuna",
+    "code": "WF",
+    "safety": 0.7348259470409373
+  },
+  {
+    "name": "Western Sahara",
+    "code": "EH",
+    "safety": 0.6004099122600579
+  },
+  {
+    "name": "Yemen",
+    "code": "YE",
+    "safety": 0.500647856235815
+  },
+  {
+    "name": "Zambia",
+    "code": "ZM",
+    "safety": 0.41416209900541157
+  },
+  {
+    "name": "Zimbabwe",
+    "code": "ZW",
+    "safety": 0.7589956346093567
+  }
+]
