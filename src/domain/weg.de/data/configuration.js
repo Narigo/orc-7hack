@@ -1,3 +1,4 @@
+import React from "react";
 import {RangeSlider} from "../components/index";
 import {weighted} from "../../../weighted";
 
@@ -12,7 +13,7 @@ export const filters = [
 
 export const questions = [
   {
-    kind: RangeSlider,
+    kind: (props) => <RangeSlider {...props}/>,
     title: "Wie sportlich bist Du?",
     description: "",
     filters: {
@@ -21,6 +22,8 @@ export const questions = [
     },
     minValue: 0,
     maxValue: 1,
+    initialValue: 0.5,
+    step: 0.01,
     minLabel: value => (
       <div className={value < 0.2 ? "unsure" : value > 0.8 ? "confident" : ""}>
         Ich bin eher ein ruhiger Typ.
@@ -34,7 +37,7 @@ export const questions = [
     footer: value => (value < 0.2) ? <div>Faultier!</div> : (value > 0.8) ? <div>Jaroslav!</div> : null
   },
   {
-    kind: RangeSlider,
+    kind: (props) => <RangeSlider {...props}/>,
     title: "Wie risikobereit bist Du?",
     description: "",
     filters: {
@@ -43,6 +46,8 @@ export const questions = [
     },
     minValue: 0,
     maxValue: 1,
+    initialValue: 0.5,
+    step: 0.01,
     minLabel: value => <div className={value < 0.2 ? "unsure" : value > 0.8 ? "confident" : ""}>Hasenfuß</div>,
     maxLabel: value => <div className={value < 0.2 ? "unsure" : value > 0.8 ? "confident" : ""}>Rambo</div>,
     footer: value => (value < 0.2) ? <div>Angsthase!</div> : null
