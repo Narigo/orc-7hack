@@ -21,10 +21,16 @@ export const questions = [
     },
     minValue: 0,
     maxValue: 1,
-    minLabel: value => <div className={value < 0.2 ? "unsure" : value > 0.8 ? "confident" : ""}>Ich bin eher ein ruhiger
-      Typ.</div>,
-    maxLabel: value => <div className={value < 0.2 ? "unsure" : value > 0.8 ? "confident" : ""}>Ich beantworte die Frage
-      gerade auf dem Laufband.</div>,
+    minLabel: value => (
+      <div className={value < 0.2 ? "unsure" : value > 0.8 ? "confident" : ""}>
+        Ich bin eher ein ruhiger Typ.
+      </div>
+    ),
+    maxLabel: value => (
+      <div className={value < 0.2 ? "unsure" : value > 0.8 ? "confident" : ""}>
+        Ich beantworte die Frage gerade auf dem Laufband.
+      </div>
+    ),
     footer: value => (value < 0.2) ? <div>Faultier!</div> : (value > 0.8) ? <div>Jaroslav!</div> : null
   },
   {
