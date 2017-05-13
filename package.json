@@ -1,11 +1,19 @@
 {
   "name": "orc-7hack",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@github.com:Narigo/orc-7hack.git",
   "author": "Joern Bernhardt <jb@campudus.com>",
   "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib/"
+  ],
   "scripts": {
+    "compile": "babel -q --ignore '*.spec.js' -d lib/ src",
+    "coverage": "nyc npm run test",
+    "lint": "eslint src/",
+    "lint:watch": "eslint src/ -w",
+    "prepublish": "npm run compile -s && npm run lint -s && npm run test -s",
     "test": "mocha --require source-map-support --compilers js:babel-core/register --colors $(find . -type d -name node_modules -prune -o -name '*.spec.js')",
     "test:watch": "npm run test -- -w"
   },
