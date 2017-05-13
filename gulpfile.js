@@ -2,6 +2,7 @@ const gulp = require("gulp");
 const reactBrowserify = require("browserify");
 const runSequence = require("run-sequence");
 const browserSync = require("browser-sync");
+const del = require("del");
 const source = require('vinyl-source-stream');
 const babelify = require('babelify'); // Used to convert ES6 & JSX to ES5s
 const gutil = require("gulp-util");
@@ -31,19 +32,25 @@ gulp.task("html", function () {
 });
 
 gulp.task('sass', function () {
-  return gulp.src(wegdeEntryPoint + '/**/*.scss')
+  return gulp.src('sass/style.scss')
              .pipe(sass().on('error', sass.logError))
-             .pipe(gulp.dest('./build/css/style.css'));
+             .pipe(gulp.dest('./build/css/'));
 });
 
 gulp.task("sync", function () {
-  gulp.watch(wegdeEntryPoint + "/**/*.scss", ["sass"]);
+  gulp.watch("sass/**/*.scss", ["sass"]);
   gulp.watch(wegdeEntryPoint + "/index.html", ["html"]);
   gulp.watch(wegdeEntryPoint + "/**/*.{js,jsx}", ["react"]);
 });
 
 gulp.task("dev", function (callback) {
   runSequence(["react", "html", "sass"], "sync", callback);
+});
+
+gulp.task("clean", function (callback) {
+  del(["./build"]).then(function () {
+    callback();
+  });
 });
 
 function errorLog(err) {
