@@ -32,7 +32,7 @@ export const ask = (apiParams) => {
       })
     };
     return Promise.resolve(params);
-  }
+  };
 };
 
 export const result = (apiParams) => {

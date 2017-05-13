@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 import App from "./pages/App";
 
-const wegdeElem = document.getElementById('app');
+const wegdeElem = document.getElementById("app");
 
 console.log("TEEEEST: ");
 

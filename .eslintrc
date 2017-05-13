@@ -22,7 +22,7 @@
   "parser": "babel-eslint",
 
   "plugins": [
-
+    "react"
   ],
 
   "rules": {
@@ -47,7 +47,7 @@
     "guard-for-in": 0,
     "handle-callback-err": [2, "^(err|error|anySpecificError)$" ],
     "indent": [2, 2, { "SwitchCase": 1 }],
-    "key-spacing": [2, { "beforeColon": true, "afterColon": true }],
+    "key-spacing": [2, { "beforeColon": false, "afterColon": true }],
     "keyword-spacing": 2,
     "linebreak-style": 0,
     "max-depth": 0,
@@ -155,8 +155,10 @@
     "operator-linebreak": [2, "after"],
     "padded-blocks": 0,
     "quote-props": 0,
-    "quotes": [2, "single", "avoid-escape"],
+    "quotes": [2, "double", "avoid-escape"],
     "radix": 2,
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
     "semi": [2, "always"],
     "semi-spacing": 0,
     "sort-vars": 0,
