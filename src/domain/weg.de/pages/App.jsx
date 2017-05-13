@@ -4,7 +4,7 @@ import {RangeSlider} from "./../components";
 export default class App extends Component {
 
   render() {
-    return <div>
+    return <div className="app">
       <RangeSlider/>
     </div>
   }
