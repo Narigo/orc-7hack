@@ -1,0 +1,12 @@
+{
+  "filters": [
+    {
+      "name": "safety",
+      "rating": 0.5
+    },
+    {
+      "name": "activities",
+      "rating": 0.5
+    }
+  ]
+}

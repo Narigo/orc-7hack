@@ -1,0 +1,8 @@
+{
+  "filters": [
+    {
+      "name": "safety",
+      "rating": 0.5
+    }
+  ]
+}
