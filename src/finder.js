@@ -36,5 +36,10 @@ export const ask = (apiParams) => {
 };
 
 export const result = (apiParams) => {
-  throw new Error("result() needs an object of ApiParams.");
+  if (!apiParams || Object.keys(apiParams).length === 0) {
+    throw new Error("result() needs an object of ApiParams.");
+  }
+
+  return Promise
+    .resolve([]);
 };

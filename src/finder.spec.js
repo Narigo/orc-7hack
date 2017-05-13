@@ -101,4 +101,12 @@ describe("result", () => {
     return expect(() => result()).to.throw(/ApiParams/i);
   });
 
+  it("can generate an api call", () => {
+    const apiParams = apiParamsMultipleFilters;
+    return result(apiParams)
+      .then(products => {
+        expect(products).to.be.an.array();
+      });
+  });
+
 });
