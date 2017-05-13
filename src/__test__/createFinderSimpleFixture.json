@@ -1,7 +1,7 @@
 {
   "filters": [
     {
-      "name": "safety",
+      "id": "safety",
       "rating": 0.5
     }
   ]

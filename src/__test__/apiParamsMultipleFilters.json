@@ -1,11 +1,11 @@
 {
   "filters": [
     {
-      "name": "safety",
+      "id": "safety",
       "rating": 0.5
     },
     {
-      "name": "activities",
+      "id": "activities",
       "rating": 0.5
     }
   ]

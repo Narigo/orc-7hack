@@ -16,7 +16,7 @@ describe("createFinder", () => {
     return createFinder({
       filters: [
         {
-          "name": "safety"
+          "id": "safety"
         }
       ]
     })
@@ -48,7 +48,7 @@ describe("ask", () => {
       answer
     })
       .then(resultApiParams => {
-        const safetyFilter = resultApiParams.filters.find(filter => filter.name === "safety");
+        const safetyFilter = resultApiParams.filters.find(filter => filter.id === "safety");
         expect(safetyFilter.rating).to.eql(1);
       });
   });
@@ -68,7 +68,7 @@ describe("ask", () => {
       answer
     })
       .then(resultApiParams => {
-        const activitiesFilter = resultApiParams.filters.find(filter => filter.name === "activities");
+        const activitiesFilter = resultApiParams.filters.find(filter => filter.id === "activities");
         expect(activitiesFilter.rating).to.eql(0);
       });
   });
@@ -88,7 +88,7 @@ describe("ask", () => {
       answer
     })
       .then(resultApiParams => {
-        const activitiesFilter = resultApiParams.filters.find(filter => filter.name === "activities");
+        const activitiesFilter = resultApiParams.filters.find(filter => filter.id === "activities");
         expect(activitiesFilter.rating).to.eql(0.25);
       });
   });
