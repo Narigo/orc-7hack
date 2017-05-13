@@ -15,7 +15,6 @@
     "coverage": "nyc npm run test",
     "lint": "eslint src/",
     "lint:watch": "eslint src/ -w",
-    "prepublish": "npm run compile -s && npm run lint -s && npm run test -s",
     "test": "mocha --require source-map-support --compilers js:babel-core/register --colors $(find . -type d -name node_modules -prune -o -name '*.spec.js')",
     "test:watch": "npm run test -- -w"
   },
@@ -51,7 +50,9 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "lodash": "^4.17.4",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "superagent": "^3.5.2"
   }
 }

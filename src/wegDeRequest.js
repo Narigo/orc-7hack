@@ -3,18 +3,20 @@
  */
 
 import {Component} from "react";
-const requestPromise = require("request-promise");
+import handleRequest from "./domain/weg.de/components/helperComponents/handleRequests";
 const _ = require("lodash");
 
+@handleRequest
 export default class WegDeComponent extends Component {
-
   webDeResponse;
 
-  constructor() {
-    super();
-    const {properties} = this.props;
-    this.webDeResponse = this.doWegDeRequest(properties);
-  };
+  componentDidMount() {
+    const {handleRequest, properties} = this.props;
+    const baseUri = "http://7hack.comvel.net/weg.de/v1/products?";
+    const apikey = "apikey=7Hack%212017";
+    const fullUri = baseUri + apikey + this.createParametersForUri(properties);
+    handleRequest(fullUri);
+  }
 
   createParametersForUri = (properties) => {
     const keys = Object.keys(properties);
@@ -23,21 +25,13 @@ export default class WegDeComponent extends Component {
     });
   };
 
-  doWegDeRequest = (properties) => {
-    const baseUri = "http://7hack.comvel.net/weg.de/v1/products?";
-    const apikey = "apikey=7Hack%212017";
-    console.log(baseUri);
-    const fullUri = baseUri + apikey + this.createParametersForUri(properties);
-    console.log(fullUri);
-    return requestPromise(fullUri)
-      .then((html) => JSON.parse(html).response);
-  };
-
   render() {
   };
 };
-const wegDeComponent = new WegDeComponent();
-wegDeComponent.doWegDeRequest({
-  channel: "PACKAGE",
-  exactDate: "false"
-}).then(response => console.log(response));
+//
+// const wegDeComponent = new WegDeComponent();
+// wegDeComponent.doWegDeRequest({
+//   channel: "PACKAGE",
+//   exactDate: "false",
+//   limit: 10
+// }).then(response => console.log(response));
