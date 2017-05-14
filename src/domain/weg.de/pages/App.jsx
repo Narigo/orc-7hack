@@ -1,8 +1,9 @@
 import React, {Component} from "react";
 import {questions, filters} from "../data/configuration";
 import {createFinder, ask} from "./../../../finder";
-import {Question, RequestResults} from "./../components"
-import {Money} from './../components'
+import {Question, RequestResults} from "./../components";
+import {Money} from './../components';
+import * as _ from "lodash";
 
 export default class App extends Component {
 
@@ -35,8 +36,8 @@ export default class App extends Component {
           this.state.apiParams.map((state, idx) => {
             if (idx === questions.length) {
               return (
-                <div>
-                  <RequestResults key={idx} state={state} />
+                <div key={idx}>
+                  <RequestResults state={state} />
                   <Money />
                 </div>
               );

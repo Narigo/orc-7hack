@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import {requestParams} from "./../../../../finder";
 import {FILTERS} from "./../../data/configuration";
 import {HotelList} from "./../index";
+import * as _ from "lodash";
 
 export default class RequestResults extends Component {
 
@@ -14,6 +15,17 @@ export default class RequestResults extends Component {
 
   componentDidMount() {
     const {state} = this.props;
+    this.refreshData(state);
+  }
+
+  componentDidUpdate(prevProps) {
+    const {state} = this.props;
+    if (!_.isEqual(prevProps.state, state)) {
+      this.refreshData(state);
+    }
+  }
+
+  refreshData(state) {
     const params = requestParams(state.filters)(FILTERS);
     const urlParams = Object.keys(params).map(key => {
       const value = expandValue(params[key]);
@@ -36,8 +48,6 @@ export default class RequestResults extends Component {
         cache: "no-cache"
       })
       .then(response => {
-        console.log("response=", response);
-        console.log("response.status=", response.status);
         if (response.status >= 200 && response.status < 300) {
           return Promise.resolve(response.json());
         } else {
