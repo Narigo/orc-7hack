@@ -138,6 +138,9 @@ describe("requestParams", () => {
   it("can generate a more complex api request object", () => {
     const apiParams = complexApiParams;
     const reqParams = requestParams(apiParams)(filters);
+    console.log("apiParams=", apiParams);
+    console.log("filters=", filters);
+    console.log("reqParams=", reqParams);
     expect(reqParams).to.eql({
       categories: [1, 2, 3, 4, 5, 6, 7],
       countries: ["DE", "US"]

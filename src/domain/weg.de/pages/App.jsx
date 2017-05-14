@@ -1,13 +1,8 @@
 import React, {Component} from "react";
-import * as _ from "lodash";
 import {questions, filters} from "../data/configuration";
-import {createFinder, ask, requestParams} from "./../../../finder";
-import {Question, Result} from "./../components"
-import handleRequest from "./../components/helperComponents/handleRequests";
-import {properties, createParametersForUri} from "./../../../wegDeRequest";
-import WegDeComponent from "../../../wegDeRequest";
+import {createFinder, ask} from "./../../../finder";
+import {Question, RequestResults} from "./../components"
 
-@handleRequest
 export default class App extends Component {
 
   constructor() {
@@ -29,16 +24,15 @@ export default class App extends Component {
   }
 
   render() {
-    const {handleRequest, getResult} = this.props;
     if (this.state.apiParams === null) {
-      return <div>Loading</div>;
+      return <div>Loading...</div>;
     } else {
       return (
         <div className="app">{
           this.state.apiParams.map((state, idx) => {
             if (idx === questions.length) {
               return (
-                <Result result={getResult()} />
+                <RequestResults key={idx} state={state} />
               );
             } else {
               const question = questions[idx];
@@ -57,23 +51,7 @@ export default class App extends Component {
                         question,
                         answer
                       })
-                        .then(state => {
-                          if (idx >= questions.length - 1) {
-                            const baseUri = "http://7hack.comvel.net/weg.de/v1/products?";
-                            const apikey = "apikey=7Hack%212017";
-                            const requestParamsObject = requestParams(state.filters);
-                            const apiParamsFilterObject = requestParamsObject(state);
-
-                            console.log("apiParamsFilterObject: ", apiParamsFilterObject);
-
-                            const fullUri = baseUri + apikey + createParametersForUri(apiParamsFilterObject);
-                            return handleRequest(fullUri);
-                          } else {
-
-                            console.log("updateState");
-                            return this.updateState(state);
-                          }
-                        })
+                        .then(state => this.updateState(state))
                     }
                   })
                 }</Question>
