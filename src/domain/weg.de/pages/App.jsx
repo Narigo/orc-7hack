@@ -47,6 +47,7 @@ export default class App extends Component {
                     minValue: question.minValue,
                     maxValue: question.maxValue,
                     step: question.step,
+                    formatLabel: question.formatLabel,
                     initialValue: question.initialValue,
                     onChangeCompleteFN: (answer) => {
                       ask(state)({

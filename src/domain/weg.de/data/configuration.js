@@ -90,16 +90,15 @@ export const questions = [
     maxValue: 1,
     initialValue: 0.5,
     step: 0.01,
-    minLabel: value => (
-      <div className={value < 0.2 ? "unsure" : value > 0.8 ? "confident" : ""}>
-        Ich bin eher ein ruhiger Typ.
-      </div>
-    ),
-    maxLabel: value => (
-      <div className={value < 0.2 ? "unsure" : value > 0.8 ? "confident" : ""}>
-        Ich beantworte die Frage gerade auf dem Laufband.
-      </div>
-    ),
+    formatLabel: (value, type) => {
+      if (value < 0.2) {
+        return <div className="unsure">Ich bin eher ein ruhiger Typ.</div>
+      } else if (value > 0.8) {
+        return <div className="confident">Ich beantworte die Frage gerade auf dem Laufband</div>
+      } else {
+        return <div className="bourgeois">Ich hab einen Fitnessvertrag</div>
+      }
+    },
     footer: value => (value < 0.2) ? <div>Faultier!</div> : (value > 0.8) ? <div>Jaroslav!</div> : null
   },
   {
@@ -114,8 +113,15 @@ export const questions = [
     maxValue: 1,
     initialValue: 0.5,
     step: 0.01,
-    minLabel: value => <div className={value < 0.2 ? "unsure" : value > 0.8 ? "confident" : ""}>Hasenfuß</div>,
-    maxLabel: value => <div className={value < 0.2 ? "unsure" : value > 0.8 ? "confident" : ""}>Rambo</div>,
+    formatLabel: (value, type) => {
+      if (value < 0.2) {
+        return <div className="unsure">Hasenfuß</div>
+      } else if (value > 0.8) {
+        return <div className="confident">Rambo</div>
+      } else {
+        return <div className="bourgeois">Spießer</div>
+      }
+    },
     footer: value => (value < 0.2) ? <div>Angsthase!</div> : null
   },
   // {
