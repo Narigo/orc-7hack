@@ -1,6 +1,10 @@
 .question {
   position: relative;
-  width: 70%;
+  width: 40%;
   display: block;
   margin: 0 auto;
+
+  h1 {
+    white-space: nowrap;
+  }
 }

@@ -7,8 +7,8 @@ export default class Question extends Component {
 
     return (
       <div className="question">
-        <div className="title">{title}</div>
-        <div className="description">{description}</div>
+        <h1 className="title">{title}</h1>
+        <h3 className="description">{description}</h3>
         {children}
       </div>
     );
