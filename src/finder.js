@@ -35,7 +35,7 @@ export const ask = (apiParams) => {
   };
 };
 
-export const result = (apiParams) => {
+export const result = ({filters}) => (apiParams) => {
   if (!apiParams || Object.keys(apiParams).length === 0) {
     throw new Error("result() needs an object of ApiParams.");
   }

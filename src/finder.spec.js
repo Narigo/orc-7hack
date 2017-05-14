@@ -127,4 +127,34 @@ describe("result", () => {
       });
   });
 
+  it("can generate a correct result", () => {
+    const apiParams = {};
+    const products = [
+      {
+        name: "a",
+        country: "DE"
+      },
+      {
+        name: "b",
+        country: "US"
+      },
+      {
+        name: "c",
+        country: "RU"
+      },
+      {
+        name: "d",
+        country: "TR"
+      },
+      {
+        name: "e",
+        country: "AF"
+      }
+    ];
+    return result(apiParams)
+      .then(products => {
+        expect(products.length).to.eql(3);
+      });
+  });
+
 });

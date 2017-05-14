@@ -1,8 +1,4 @@
-/**
- * Created by danielhilpoltsteiner on 13.05.17.
- */
-
-import {Component} from "react";
+import React, {Component} from "react";
 import handleRequest from "./domain/weg.de/components/helperComponents/handleRequests";
 const _ = require("lodash");
 
