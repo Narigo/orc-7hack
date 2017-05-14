@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import {questions, filters} from "../data/configuration";
 import {createFinder, ask} from "./../../../finder";
 import {Question, RequestResults} from "./../components"
+import {Money} from './../components'
 
 export default class App extends Component {
 
@@ -32,7 +33,10 @@ export default class App extends Component {
           this.state.apiParams.map((state, idx) => {
             if (idx === questions.length) {
               return (
-                <RequestResults key={idx} state={state} />
+                <div>
+                  <RequestResults key={idx} state={state} />
+                  <Money />
+                </div>
               );
             } else {
               const question = questions[idx];
