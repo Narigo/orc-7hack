@@ -8,7 +8,7 @@ export default class RangeSlider extends Component {
 
     this.state = {
       value: props.initialValue
-    }
+    };
   }
 
   _onChange = (value) => this.setState({value});
@@ -21,9 +21,9 @@ export default class RangeSlider extends Component {
       maxValue={maxValue}
       minValue={minValue}
       step={step}
-      value={this.state.value}
+      value={Math.round(this.state.value * 100) / 100}
       onChange={this._onChange}
       onChangeComplete={onChangeCompleteFN}
-    />
+    />;
   }
 }
