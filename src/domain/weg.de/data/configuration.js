@@ -14,10 +14,12 @@ export const filters = [
       return {
         ...filters,
         countries: FILTERS.countries.filter(country => {
-          return (value > 0.8 && country === "DE")
+          const included = (value > 0.8 && country === "DE")
             || (value > 0.6 && ["DE", "US", "RU"].includes(country))
             || (value > 0.4 && ["DE", "US", "RU", "TR"].includes(country))
             || (value > 0.2 && ["DE", "US", "RU", "TR", "AF"].includes(country));
+          console.log("including country", country, "?", included, "safety rating=", value);
+          return included;
         })
       };
     }
@@ -31,7 +33,7 @@ export const filters = [
           return (value > 0.5 || idx < (FILTERS.categories.length / 2));
         }),
         countries: FILTERS.countries.filter(country => {
-          return value > 0.7 && country !== "AF";
+          return country !== "AF" || value > 0.7;
         })
       }
     }

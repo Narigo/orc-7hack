@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {requestParams} from "./../../../../finder";
 import {FILTERS} from "./../../data/configuration";
+import {HotelList} from "./../index";
 
 export default class RequestResults extends Component {
 
@@ -64,9 +65,8 @@ export default class RequestResults extends Component {
         <div>Loading results</div>
       );
     } else {
-      console.log("result=", this.state);
       return (
-        <div>{this.state.result}</div>
+        <HotelList hotels={this.state.result.offerList} />
       );
     }
   }
