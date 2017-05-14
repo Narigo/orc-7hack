@@ -25,7 +25,7 @@ export default class RequestResults extends Component {
     }).join("");
     const baseUri = "https://cors-anywhere.herokuapp.com/http://7hack.comvel.net/weg.de/v1/products?";
     const apikey = "apikey=7Hack%212017&channel=HOTEL";
-    const url = `${baseUri}${apikey}${urlParams}&limit=10`;
+    const url = `${baseUri}${apikey}${urlParams}&limit=30`;
 
     console.log("url to request=", url);
 

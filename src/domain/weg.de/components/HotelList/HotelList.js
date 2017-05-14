@@ -4,7 +4,7 @@ export default class HotelList extends Component {
   render() {
     const {hotels} = this.props;
     return (
-      <div>{
+      <div className="hotel-list">{
         hotels.map((hotel, idx) => {
           return (
             <Hotel key={idx} {...hotel} />
@@ -19,9 +19,12 @@ class Hotel extends Component {
   render() {
     const {comvelHotel} = this.props;
     return (
-      <div>
-        <h2>{comvelHotel.hotelName}</h2>
-        <img src={comvelHotel.image.url} />
+      <div className="hotel">
+        <div className="hotel-wrapper">
+          <h2>{comvelHotel.hotelName}</h2>
+          <h4>{comvelHotel.country.name}</h4>
+          <img src={comvelHotel.image.url} />
+        </div>
       </div>
     )
   }

@@ -1,0 +1,34 @@
+.hotel-list {
+  position: relative;
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  overflow: auto;
+
+  .hotel {
+    width: calc(35% - 2em);
+    height: 400px;
+    float: left;
+    padding-right: 1em;
+
+    img {
+      width: 100%;
+      height: 250px;
+    }
+
+    .hotel-wrapper {
+      padding: 2em;
+
+      h2, h4 {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+
+    &:nth-child(3n) {
+      padding-right: 0;
+      float: right;
+    }
+  }
+}

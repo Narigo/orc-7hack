@@ -3,7 +3,7 @@ import {RangeSlider} from "../components/index";
 import {weighted} from "../../../weighted";
 
 export const FILTERS = {
-  countries: ["DE", "US", "RU", "TR", "AF"],
+  country: ["DE", "US", "RU", "TR", "AF"],
   categories: [1, 2, 3, 4, 5, 6, 7]
 };
 
@@ -13,7 +13,7 @@ export const filters = [
     apply: (value, filters) => {
       return {
         ...filters,
-        countries: FILTERS.countries.filter(country => {
+        country: FILTERS.country.filter(country => {
           const included = (value > 0.8 && country === "DE")
             || (value > 0.6 && ["DE", "US", "RU"].includes(country))
             || (value > 0.4 && ["DE", "US", "RU", "TR"].includes(country))
@@ -32,7 +32,7 @@ export const filters = [
         categories: FILTERS.categories.filter((category, idx) => {
           return (value > 0.5 || idx < (FILTERS.categories.length / 2));
         }),
-        countries: FILTERS.countries.filter(country => {
+        country: FILTERS.country.filter(country => {
           return country !== "AF" || value > 0.7;
         })
       }
