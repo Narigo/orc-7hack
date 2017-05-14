@@ -17,9 +17,11 @@ export default class App extends Component {
       });
   }
 
-  updateState(newState) {
+  updateState(newState, idx) {
+    const newApiParams = this.state.apiParams;
+    newApiParams[idx + 1] = newState;
     this.setState({
-      apiParams: [...this.state.apiParams, newState]
+      apiParams: newApiParams
     });
   }
 
@@ -51,7 +53,7 @@ export default class App extends Component {
                         question,
                         answer
                       })
-                        .then(state => this.updateState(state))
+                        .then(state => this.updateState(state, idx))
                     }
                   })
                 }</Question>
