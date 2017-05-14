@@ -14,7 +14,7 @@ export default class RangeSlider extends Component {
   _onChange = (value) => this.setState({value});
 
   render() {
-    const {maxValue, minValue, step, onChangeCompleteFN} = this.props;
+    const {maxValue, minValue, step, formatLabel, onChangeCompleteFN} = this.props;
 
     return <InputRange
       className="range-slider"
@@ -24,6 +24,7 @@ export default class RangeSlider extends Component {
       value={Math.round(this.state.value * 100) / 100}
       onChange={this._onChange}
       onChangeComplete={onChangeCompleteFN}
+      formatLabel={formatLabel}
     />;
   }
 }

@@ -18,9 +18,11 @@ export default class App extends Component {
       });
   }
 
-  updateState(newState) {
+  updateState(newState, idx) {
+    const newApiParams = this.state.apiParams;
+    newApiParams[idx + 1] = newState;
     this.setState({
-      apiParams: [...this.state.apiParams, newState]
+      apiParams: newApiParams
     });
   }
 
@@ -49,13 +51,14 @@ export default class App extends Component {
                     minValue: question.minValue,
                     maxValue: question.maxValue,
                     step: question.step,
+                    formatLabel: question.formatLabel,
                     initialValue: question.initialValue,
                     onChangeCompleteFN: (answer) => {
                       ask(state)({
                         question,
                         answer
                       })
-                        .then(state => this.updateState(state))
+                        .then(state => this.updateState(state, idx))
                     }
                   })
                 }</Question>
