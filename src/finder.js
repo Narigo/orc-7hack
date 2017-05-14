@@ -1,8 +1,6 @@
-export const createFinder = (
-  {
-    filters = []
-  }
-) => {
+export const createFinder = ({
+                               filters = []
+                             }) => {
 
   return Promise
     .resolve({
@@ -40,7 +38,12 @@ export const requestParams = (apiParams) => {
     throw new Error("requestParams() needs an object of ApiParams.");
   }
 
-  return (filters) => apiParams.reduce((final, mapper) => ({
-    ...mapper.apply(mapper.rating, final)
-  }), filters);
+  return (filters) => {
+
+    return apiParams.reduce((final, mapper) => {
+      return {
+        ...mapper.apply(mapper.rating, final)
+      }
+    }, filters);
+  };
 };

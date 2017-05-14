@@ -15,31 +15,16 @@ export default class WegDeComponent extends Component {
   }
 
   componentDidMount() {
-    const baseUri = "http://7hack.comvel.net/weg.de/v1/products?";
-    const apikey = "apikey=7Hack%212017";
-    const fullUri = baseUri + apikey + this.createParametersForUri(this.properties);
+
     handleRequest(fullUri);
   }
 
-  createParametersForUri = (properties) => {
-    const keys = Object.keys(properties);
-    return _.map(keys, key => {
-      return `&${key}=${properties[key]}`;
-    });
-  };
+
 
   render() {
   }
   ;
 }
-;
-//
-// const wegDeComponent = new WegDeComponent();
-// wegDeComponent.doWegDeRequest({
-//   channel: "PACKAGE",
-//   exactDate: "false",
-//   limit: 10
-// }).then(response => console.log(response));
 
 const calculateStars = (pricing) => {
   return Math.ceil(pricing * 6);
@@ -55,9 +40,9 @@ const calculateMeat = (pricing) => {
 
 const filterCountries = (countries, threshold) => {
   return _.filter(countries, country => country.safety > threshold);
-}
+};
 
-const properties = (comfort, countries, channel) => {
+export const properties = (comfort, countries, channel) => {
   return {
     channel: channel,
     mealType: calculateMeat(comfort),
@@ -67,6 +52,13 @@ const properties = (comfort, countries, channel) => {
     countries: filterCountries(countries),
     limit: 50
   };
+};
+
+export const createParametersForUri = (properties) => {
+  const keys = Object.keys(properties);
+  return _.map(keys, key => {
+    return `&${key}=${properties[key]}`;
+  });
 };
 
 <WegDeComponent properties={properties} />

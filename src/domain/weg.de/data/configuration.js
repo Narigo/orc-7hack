@@ -13,7 +13,7 @@ export const filters = [
     apply: (value, filters) => {
       return {
         ...filters,
-        countries: filters.countries.filter(country => {
+        countries: FILTERS.countries.filter(country => {
           return (value > 0.8 && country === "DE")
             || (value > 0.6 && ["DE", "US", "RU"].includes(country))
             || (value > 0.4 && ["DE", "US", "RU", "TR"].includes(country))
@@ -27,10 +27,10 @@ export const filters = [
     apply: (value, filters) => {
       return {
         ...filters,
-        categories: filters.categories.filter((category, idx) => {
+        categories: FILTERS.categories.filter((category, idx) => {
           return (value > 0.5 || idx < (FILTERS.categories.length / 2));
         }),
-        countries: filters.countries.filter(country => {
+        countries: FILTERS.countries.filter(country => {
           return value > 0.7 && country !== "AF";
         })
       }
