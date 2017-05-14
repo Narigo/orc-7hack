@@ -92,11 +92,11 @@ export const questions = [
     step: 0.01,
     formatLabel: (value, type) => {
       if (value < 0.2) {
-        return <div className="unsure">Ich bin eher ein ruhiger Typ.</div>
+        return <div className="custom-label unsure">Ich bin eher ein ruhiger Typ.</div>
       } else if (value > 0.8) {
-        return <div className="confident">Ich beantworte die Frage gerade auf dem Laufband</div>
+        return <div className="custom-label confident">Ich beantworte die Frage gerade auf dem Laufband</div>
       } else {
-        return <div className="bourgeois">Ich hab einen Fitnessvertrag</div>
+        return <div className="custom-label bourgeois">Ich hab einen Fitnessvertrag</div>
       }
     },
     footer: value => (value < 0.2) ? <div>Faultier!</div> : (value > 0.8) ? <div>Jaroslav!</div> : null
@@ -115,11 +115,11 @@ export const questions = [
     step: 0.01,
     formatLabel: (value, type) => {
       if (value < 0.2) {
-        return <div className="unsure">Hasenfuß</div>
+        return <div className="custom-label unsure">Hasenfuß</div>
       } else if (value > 0.8) {
-        return <div className="confident">Rambo</div>
+        return <div className="custom-label confident">Rambo</div>
       } else {
-        return <div className="bourgeois">Spießer</div>
+        return <div className="custom-label bourgeois">Spießer</div>
       }
     },
     footer: value => (value < 0.2) ? <div>Angsthase!</div> : null

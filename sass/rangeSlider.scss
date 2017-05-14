@@ -4,6 +4,26 @@
   margin: 3em 0;
 }
 
+.input-range__label {
+  top: -3rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.input-range__slider {
+  background-color: #676767;
+  width: 0.7rem;
+  border-radius: inherit;
+  border-color: transparent;
+}
+
 .input-range__track--active {
   background-color: transparent;
+}
+
+.input-range__label--min, .input-range__label--max {
+  display: none;
+}
+
+.custom-label {
+  padding: 1rem;
 }
