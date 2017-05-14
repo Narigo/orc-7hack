@@ -1,7 +1,9 @@
 import expect from "must";
-import {ask, createFinder, result} from "./finder";
+import {ask, createFinder, requestParams} from "./finder";
 import createFinderSimpleFixture from "./__test__/createFinderSimpleFixture.json";
 import apiParamsMultipleFilters from "./__test__/apiParamsMultipleFilters.json";
+import customApiParams from "./__test__/customApiParams";
+import complexApiParams from "./__test__/complexApiParams";
 
 describe("createFinder", () => {
 
@@ -113,48 +115,33 @@ describe("ask", () => {
 
 });
 
-describe("result", () => {
+describe("requestParams", () => {
+
+  const filters = {
+    categories: [1, 2, 3, 4],
+    countries: ["DE", "US", "AF"]
+  };
 
   it("needs a state object", () => {
-    return expect(() => result()).to.throw(/ApiParams/i);
+    return expect(() => requestParams()).to.throw(/ApiParams/i);
   });
 
-  it("can generate an api call", () => {
-    const apiParams = apiParamsMultipleFilters;
-    return result(apiParams)
-      .then(products => {
-        expect(products).to.be.an.array();
-      });
+  it("can generate an api request object", () => {
+    const apiParams = customApiParams;
+    const reqParams = requestParams(apiParams)(filters);
+    expect(reqParams).to.eql({
+      categories: [1, 2, 3, 4],
+      countries: ["DE", "US"]
+    });
   });
 
-  it("can generate a correct result", () => {
-    const apiParams = {};
-    const products = [
-      {
-        name: "a",
-        country: "DE"
-      },
-      {
-        name: "b",
-        country: "US"
-      },
-      {
-        name: "c",
-        country: "RU"
-      },
-      {
-        name: "d",
-        country: "TR"
-      },
-      {
-        name: "e",
-        country: "AF"
-      }
-    ];
-    return result(apiParams)
-      .then(products => {
-        expect(products.length).to.eql(3);
-      });
+  it("can generate a more complex api request object", () => {
+    const apiParams = complexApiParams;
+    const reqParams = requestParams(apiParams)(filters);
+    expect(reqParams).to.eql({
+      categories: [1, 2, 3, 4, 5, 6, 7],
+      countries: ["DE", "US"]
+    });
   });
 
 });

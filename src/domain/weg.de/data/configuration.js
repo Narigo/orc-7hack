@@ -10,7 +10,7 @@ const FILTERS = {
 export const filters = [
   {
     id: "safety",
-    map: (value, filters) => {
+    apply: (value, filters) => {
       return {
         ...filters,
         countries: filters.countries.filter(country => {
@@ -24,7 +24,7 @@ export const filters = [
   },
   {
     id: "activities",
-    map: (value, filters) => {
+    apply: (value, filters) => {
       return {
         ...filters,
         categories: filters.categories.filter((category, idx) => {
@@ -38,7 +38,7 @@ export const filters = [
   },
   {
     id: "nightlife",
-    map: (value, filters) => {
+    apply: (value, filters) => {
       return {
         ...filters,
 
@@ -47,7 +47,7 @@ export const filters = [
   },
   {
     id: "cities",
-    map: (value, filters) => {
+    apply: (value, filters) => {
       return {
         ...filters,
 
@@ -56,7 +56,7 @@ export const filters = [
   },
   {
     id: "comfort",
-    map: (value, filters) => {
+    apply: (value, filters) => {
       return {
         ...filters,
 
@@ -65,7 +65,7 @@ export const filters = [
   },
   {
     id: "distance",
-    map: (value, filters) => {
+    apply: (value, filters) => {
       return {
         ...filters,
 

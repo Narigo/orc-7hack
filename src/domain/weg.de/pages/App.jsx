@@ -1,7 +1,8 @@
 import React, {Component} from "react";
 import {questions, filters} from "../data/configuration";
-import {createFinder, ask, result} from "./../../../finder";
+import {createFinder, ask, requestParams} from "./../../../finder";
 import {Question} from "./../components"
+import WegDeComponent from "../../../wegDeRequest";
 
 export default class App extends Component {
 
@@ -24,6 +25,7 @@ export default class App extends Component {
   }
 
   render() {
+    const {startRequest} = this.props;
     if (this.state.apiParams === null) {
       return <div>Loading</div>;
     } else {
@@ -33,7 +35,7 @@ export default class App extends Component {
             console.log("state=", state);
             if (idx === questions.length) {
               return (
-                <div key={idx}>{`Products should be array: ${state}`}</div>
+                <WegDeComponent key={idx} properties={requestParams(state)}/>
               );
             } else {
               const question = questions[idx];
@@ -54,12 +56,11 @@ export default class App extends Component {
                       })
                         .then(state => {
                           if (idx >= questions.length - 1) {
-                            return result(state);
+                            return startRequest(requestParams(state));
                           } else {
-                            return state;
+                            return this.updateState(state);
                           }
                         })
-                        .then(state => this.updateState(state));
                     }
                   })
                 }</Question>

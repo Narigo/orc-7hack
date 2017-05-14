@@ -35,11 +35,12 @@ export const ask = (apiParams) => {
   };
 };
 
-export const result = ({filters}) => (apiParams) => {
+export const requestParams = (apiParams) => {
   if (!apiParams || Object.keys(apiParams).length === 0) {
-    throw new Error("result() needs an object of ApiParams.");
+    throw new Error("requestParams() needs an object of ApiParams.");
   }
 
-  return Promise
-    .resolve([]);
+  return (filters) => apiParams.reduce((final, mapper) => ({
+    ...mapper.apply(mapper.rating, final)
+  }), filters);
 };
