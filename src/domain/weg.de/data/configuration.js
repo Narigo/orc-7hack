@@ -1,6 +1,6 @@
 import React from "react";
 import {RangeSlider} from "../components/index";
-import {weighted} from "../../../weighted";
+import {inverseWeighted, weighted} from "../../../weighted";
 
 export const FILTERS = {
   country: ["DE", "US", "RU", "TR", "AF"],
@@ -107,7 +107,7 @@ export const questions = [
     title: "Wie risikobereit bist Du?",
     description: "",
     filters: {
-      safety: (rating, answer) => weighted(1)(rating, 1 - answer),
+      safety: inverseWeighted(1),
       activities: weighted(0.5)
     },
     minValue: 0,
@@ -180,8 +180,8 @@ export const questions = [
   //   filters: {
   //     safety: weighted(0.2),
   //     cities: weighted(1),
-  //     comfort: (rating, answer) => weighted(0.8)(rating, 1 - answer),
-  //     distance: (rating, answer) => weighted(1)(rating, 1 - answer) // TODO inverseWeighted function
+  //     comfort: inverseWeighted(0.8),
+  //     distance: inverseWeighted(1)
   //   },
   //   minValue: 0,
   //   maxValue: 1,
